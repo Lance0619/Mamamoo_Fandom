@@ -1,0 +1,128 @@
+:root {
+  --Flame: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+  --Ice: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+  --Wind: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  --red: #c30052;
+  --blackish: #333;
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: " Inter ", sans-serif;
+  line-height: 1.6;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 1.3rem;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 30rem;
+  color: var(--red);
+  margin-left: -35px;
+  margin-bottom: -15px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 2.5rem;
+  color: var(--blackish);
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 1.5rem;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 1.3rem;
+}
+
+.container {
+  display: grid;
+  min-height: 90vh;
+  place-content: center;
+}
+
+.card {
+  border-radius: 0.7rem;
+  box-shadow: 0.3rem 0.3rem 1.5rem rgba(0, 0, 0, 0.15);
+  min-width: 25rem;
+  padding: 1rem;
+  margin: 1%;
+  color: var(--white);
+}
+
+.card__horizontal {
+  max-width: 15rem;
+  padding: 1.5rem 1rem 2rem 1rem;
+}
+
+.card__box--gradient-sunrise,
+.btn__color--gradient-sunrise,
+.card__horizontal--gradient-sunrise {
+  background-image: var(--Wind);
+}
+
+.card__box--gradient-frost,
+.btn__color--gradient-frost,
+.card__horizontal--gradient-frost {
+  background-image: var(--Flame);
+}
+
+.card__box--gradient-lime,
+.btn__color--gradient-lime,
+.card__horizontal--gradient-lime {
+  background-image: var(--Ice);
+}
+
+.card__box {
+  width: 100%;
+  min-height: 20rem;
+  border-radius: 0.7rem;
+  box-shadow: 0.3rem 0.3rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+hr {
+  border: 1px solid rgba(51, 51, 51, 0.062);
+}
+
+button {
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.444);
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.wrapper {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 90vw;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90vw;
+  }
+}
